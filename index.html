@@ -15,25 +15,34 @@
             </p>
             <form action="/" method="get">
                 <legend>Let's do this!</legend>
-                <label for="username">First Name</label>
-                <input type="text" name="username" id="username">
+                <div class="wrapper">
+                    <div>
+                        <label for="username">First Name</label>
+                        <input type="text" name="username" id="username" minlength="5">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="username" id="lastname">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone No</label>
+                        <input type="tel" name="phone-no" id="phone">
+                    </div>
+                    <div>
+                        <label for="password" >Password</label>
+                        <input type="password" required name="user-password" id="password">
+                    </div>
+                    <div>
+                        <label for="confirm-pass" >Confirm Password</label>
+                        <input type="password" required name="confirm-pass" id="confirm-pass">
+                    </div>
+                </div>
 
-                <label for="lastname">Last Name</label>
-                <input type="text" name="username" id="lastname">
-
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-
-                <label for="phone">Phone No</label>
-                <input type="tel" name="phone-no" id="phone">
-
-                <label for="password">Password</label>
-                <input type="password" name="user-password" id="password">
-
-                <label for="confirm-pass">Confirm Password</label>
-                <input type="password" name="confirm-pass" id="confirm-pass">
-
-                <button class="submit" type="submit">Create Account</button>
+                <button class="submit-button" type="submit">Create Account</button>
             </form>
         </div>
     </div>
