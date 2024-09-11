@@ -1,75 +1,99 @@
-:root{
-    box-sizing: border-box;
-}
-
 body{
-    min-height: 100vh;
-    display:flex;
     margin:0;
     padding:0;
+    
 }
-
 .container{
+    min-height: 100vh;
     display: flex;
 }
 
-.side-image{
-    flex-basis:30vw;
-    flex-shrink: 0;
-    background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right:25px;
-}
-
 .content{
-    width:60%;
-    padding-right:250px; 
-    margin-top: 100px;
+    background-color: rgb(251, 249, 246);
+    flex-grow: 1;
 }
 
-p,
-legend{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bolder;
+.side-image{
+    width:40%;
+    background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-p{
+.box{
+    padding-top:10%;
     margin-bottom:20px;
 }
 
-form{
-    appearance: none;
+.website-intro{
+    padding-left:20px;
+    padding-right: 200px;
 }
 
-.submit-button{
-    display: inline-block;
-    width: fit-content;
+p{
+    font-size: large;
+    font-weight: bold;
+}
+
+form{
+    margin: 40px 0;
+    background-color: white;
+    padding:40px 20px;
+    box-shadow: 5px 5px 6px rgba(0, 0, 0,0.2);
+}
+
+legend{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    width:50%;
+    column-gap: 40px;
 }
 
 label{
     display: block;
-}
-
-.wrapper{
-    margin:30px 0;
-    display:flex;
-    flex-wrap: wrap;
-    width:70%
-}
-
-.wrapper>div{
-    margin-right: 40px;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 input{
     appearance: none;
-    /* border-radius: 5%; */
-    width:150px;
-    border:1px solid black
+    border-radius: 4px;
+    /* width:150px; */
+    border:1px solid rgb(0, 0, 0,0.1);
+    font-size: 1rem;
 }
 
 input:invalid{
     border: 2px solid red;
+}
+
+input:user-valid{
+    border:2px solid var(--error);
+}
+
+input:focus{
+    outline: none;
+    border:2px solid rgba(18, 98, 227,.5);
+    border-radius: 3%;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0,0.1);
+}
+
+.submit-button{
+    background-color: #596D48;
+    border-radius: 5px;
+    padding:10px 30px;
+    border:1px solid black;
+    color:white;
+    font-weight: bold;
+    margin-left:20px;
+}
+
+.log-in{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: .9rem;
 }

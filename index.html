@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="side-image"> </div>
-        <div class="content">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, accusantium in nesciunt sunt eaque possimus sapiente dolor reiciendis doloribus harum inventore temporibus ipsum eum corrupti itaque obcaecati repellat quaerat sequi!     
-            </p>
-            <form action="/" method="get">
-                <legend>Let's do this!</legend>
-                <div class="wrapper">
-                    <div>
-                        <label for="username">First Name</label>
-                        <input type="text" name="username" id="username" minlength="5">
-                    </div>
-                    <div>
-                        <label for="lastname">Last Name</label>
-                        <input type="text" name="username" id="lastname">
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
-                    </div>
-                    <div>
-                        <label for="phone">Phone No</label>
-                        <input type="tel" name="phone-no" id="phone">
-                    </div>
-                    <div>
-                        <label for="password" >Password</label>
-                        <input type="password" required name="user-password" id="password">
-                    </div>
-                    <div>
-                        <label for="confirm-pass" >Confirm Password</label>
-                        <input type="password" required name="confirm-pass" id="confirm-pass">
-                    </div>
-                </div>
+        <div class="side-image"> 
 
-                <button class="submit-button" type="submit">Create Account</button>
-            </form>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="website-intro">
+                    <p>
+                        This is not a real website. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iure provident fugit pariatur dolorum sapiente error ipsum ipsam nam quas quaerat, nulla iusto a porro dolore cum, maiores amet sed?
+                    </p>
+                    <p>
+                        Sign up to get started.
+                    </p>
+                </div>
+                <form action="/" method="get" id="create-account">
+                    <legend>Let's do this!</legend>
+                    <div class="wrapper">
+                        <div>
+                            <label for="username">First Name</label>
+                            <input type="text" name="username" id="username" minlength="5">
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="username" id="lastname">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div>
+                            <label for="phone">Phone No</label>
+                            <input type="tel" name="phone-no" id="phone">
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" required name="user-password" id="password">
+                        </div>
+                        <div>
+                            <label for="confirm-pass">Confirm Password</label>
+                            <input type="password" required name="confirm-pass" id="confirm-pass">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button class="submit-button" type="submit" form="create-account">Create Account</button>
+            <div class="log-in">Already have an account <a href="/">Log in</a></div>
         </div>
     </div>
 </body>
+
 </html>
